@@ -1,0 +1,348 @@
+<!--火狮 心计-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/huoshi111/huoshiyinyuelogo/main/huoshiyinyuelogo.png">
+    <title>心计</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
+            background-image: url('https://raw.githubusercontent.com/Xiaowameijiao/huoshiyinyuebizhi4.github.io/main/huoshiyinyuebizhi5.webp');
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+        }
+        .book-container {
+            width: 80%;
+            height: 90%;
+            position: relative;
+            border: 1px solid #a4a4a4;
+            background: #eeeeee;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: none;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        .cover {
+            width: 80%;
+            height: 90%;
+            position: relative;
+            background: #2c2c2cf3;
+            color: #fafafacb;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+        }
+        .cover h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .open-button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background: #171717;
+            color: rgba(255, 255, 255, 0.838);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .open-button:hover {
+            background: #262626;
+        }
+        .left-page, .right-page {
+            width: 50%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+        .left-page {
+            border-right: 1px solid #ccc;
+        }
+        .arrow {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #35353567;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .arrow:hover {
+            background: #36363677;
+        }
+        .arrow.next {
+            bottom: 20px;
+            right: 20px;
+        }
+        .arrow.prev {
+            bottom: 20px;
+            left: 20px;
+        }
+        .page-content {
+            display: none;
+        }
+        .page-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <h1> <center>心计 </center>   </h1>
+        <h3>网页版 电子书</h3>
+        <br>
+        <strong><center>
+        <p style="color: #ebebeb;">《心计》是一本深刻揭示人际关系微妙之处的书，它通过细致的观察和分析，
+        <br>向读者展示了在朋友与朋友、人与人之间交往时可能遇到的各种情境。这本书不仅是对人际交往中策略和技巧的探讨，
+        <br>更是对如何在复杂的社会关系网中保持自我、建立和谐关系的指导。<br> 
+        <br> 保持尊重他人是最基本的礼貌。在交流中，理智而平和的态度不仅是正确的选择，也是道德的体现。<br> 即便在他人没有嘲笑你的情况下，依然要以理性回应，而不是让情绪左右行为。同样，嘲笑他人也不是明智的做法。<br>真正有意义的交流在于鼓励与支持，而不是通过攻击或贬低他人来表达自己。用善意与理解去对待他人，才能共同营造一个和谐的氛围。</p>
+<br>
+        <p>中华人民共和国法律 第二百四十六条【侮辱罪、诽谤罪】以暴力或者其他方法公然侮辱他人或者捏造事实诽谤他人，<br>情节严重的，处三年以下有期徒刑、拘役、管制或者剥夺政治权利。</p>
+    
+        </center>
+        </strong>
+        <br><br><br>
+        <button class="open-button" id="open-button">打开</button>
+        <br><br>
+        <p>火狮 HS </p>
+    </div>
+
+    <div class="book-container" id="book-container">
+        <!-- Left and Right Pages -->
+        <div class="left-page">
+
+            <div class="page-content active" id="page-1-left"><center> <b>第一页</b></center>
+                <hr>
+                <br>
+                <b>这些并不是让你变得冷漠或算计，而是为了更好地保护自己，同时更清醒地与人交往。</b>
+                <br>
+                <br>
+            <b>1. 懂得察言观色</b>
+               <p>-别人的语言和行为往往透露出内心的想法，学会观察对方的表情、语气和行为背后的意图。</p>
+               <br>
+            <b>2. 距离感是保护自己的武器</b>
+              <p>-即使是关系亲密的人，也需要保持适度的界限，过度坦诚可能会被利用。</p>
+              <br>
+            <b>3. 别在众人面前展示你的全部实力</b>
+              <p>- 给别人留有想象空间，不轻易暴露自己的底牌。</p>
+              <br>
+            <b>4. 冷静是最大的力量</b>
+              <p>- 面对挑衅和冲突时，冷静应对可以让你占据主动。</p>
+            <br>
+            <b>5. 小恩小惠买人心</b>
+              <p>- 在适当时候给予别人帮助，甚至是小小的礼物，能建立好的人际关系。</p>
+              <br>
+            </div>
+
+            <div class="page-content" id="page-2-left"><center><b>第三页</b></center>
+                <hr>
+                <br>
+                <b>个人层面</b>
+                <br>
+                <br>
+            <b>1. 不要轻易表露你的喜恶</b>
+            <p>- 太明显的喜好可能成为他人操控你的手段，而你的厌恶可能成为别人的攻击点。</p>
+            <br>
+            <b>2. 避免与人争高低</b>
+            <p>- 很多时候赢了争论却输了人心，不必要的对抗不如退一步海阔天空。</p>
+            <br>
+            <b>全局智慧</b>
+            <br><br>
+            <b>3. 学会“沉默是金”</b>
+            <p>- 在复杂场合里，少说话永远比多说话更安全；让别人多表达，你就能掌握更多信息。</p>
+             <br>
+             <b>4. 不要做情绪的奴隶</b>
+             <p>- 遇到挫折或愤怒时，不要马上反应，停下来冷静思考会让你更占上风。</p>
+            </div>
+            <div class="page-content" id="page-3-left"><center><b>第五页</b></center>
+            <hr>
+            <br>
+            <b>这些心计和智慧都是为了更好地适应复杂的人际和社会环境，记住“防人之心不可无，但害人之心不可有”。</b>
+            <br>
+            <br>
+            <br>
+<b>1. 每个人都有自己的天赋，你需要的只是找到它。</b>
+<p>- 学习不好并不代表你没有能力，也许你擅长动手、创意、沟通或其他独特的事情。</p>
+<br>
+<b>2. 学历不是成功的唯一标准，找到你热爱的事情，全力以赴，就能创造奇迹。</b>
+<p>- 许多成功人士都没有高学历，但他们通过专注和努力，实现了自己的价值。</p>
+<br>
+<b>3. 不要被别人的眼光束缚，真正的成就是做自己喜欢并擅长的事。</b>
+<p>- 每个人都有独特的人生轨迹，不需要活在别人的标准中。</p>
+<br>
+<b>4. 学习不好不代表你没有未来，你的人生定义在于你如何选择和行动。</b>
+<p>- 找到自己的方向，实践远比成绩更重要。</p>
+<br>
+
+            </div>
+            <div class="page-content" id="page-4-left"><center><b>第七页</b></center>
+            <hr>
+            <br>
+            <b>做好自己，但不要越界。</b>
+            <br>
+            <br>
+            <b>1. 你的人生是自己的，别人的看法只是风，吹不倒你。</b>
+<p>- 别让外界的评价成为你生活的主导，专注做好自己。</p>
+<br>
+<b>2. 别人的声音是短暂的，而你内心的坚定才是永恒的。</b>
+<p>- 不要因为别人的一句话而怀疑自己的价值。</p>
+<br>
+<b>3. 做好自己，比迎合别人更重要。</b>
+<p>- 无需改变自己去讨好任何人，真正懂你的人自然会欣赏你。</p>
+<br>
+<b>4. 别人怎么看你，不重要，重要的是你怎么看自己。</b>
+<p>- 自我认可才是内心安定的关键。</p>
+<br>
+<b>5. 不要活在别人的眼光里，真正自由的人只遵循自己的内心。</b>
+<p>- 只有内心的自由，才能真正掌握自己的命运。</p>
+            </div>
+        </div>
+        <div class="right-page">
+            <div class="page-content active" id="page-1-right"><center><b>第二页</b></center>
+                <hr>
+                <br>
+            <b>6. 对人的信任要有层次</b>
+            <p>- 不同的人值得不同的信任，不要把所有秘密都告诉同一个人。</p>
+            <br>
+            <b>7. 不要轻易袒露你的软肋</b>
+            <p>- 你的弱点和痛点一旦被人知道，可能会成为别人的武器。</p>
+            <br>
+            <b>8. 守住秘密是尊重自己</b>
+            <p>- 不仅是别人的秘密，自己的事情也不宜轻易分享。</p>
+            <br>
+            <b>9. 大事化小，小事化了</b>
+            <p>- 在人际冲突中，懂得以柔克刚，不让小事升级为不可调和的大问题。</p>
+            <br>
+            <b>10. 远离无效社交</b>
+            <p>- 把时间和精力放在真正重要的事情和人身上，而不是浪费在无意义的关系里。</p>
+            <br>
+            <b>11. 真正的朋友</b>
+            <p>- 但你和朋友讲你经历的一些糟糕的事情，你的朋友只会用一些话语普通的安慰话语来安慰你，<br>这不是真正的朋友，真正的朋友会问你的经历和帮助，而不是说一下就完事。</p>
+            </div>
+            <div class="page-content" id="page-2-right"><center><b>第四页</b></center>
+            <hr>
+            <br>
+            <b>5. 站在高处看问题</b>
+            <p>- 不要陷入眼前的利益或冲突，多从全局和长期的角度看问题，往往能找到更优解。</p>
+            <br>
+            <b> 6. 原谅</b>
+            <p>- 不要轻易原谅伤害过你的人。</p>
+            <br><br>
+            <b>记住，一定要尊重他人在没有侮辱你的情况下</b>
+            </div>
+            <div class="page-content" id="page-3-right"><center><b>第六页</b></center>
+            <hr>
+            <br>
+            <b>5. 有些东西学校不会教，但社会会给你机会去学。</b>
+<p>- 学校的成绩只是人生的一部分，你的潜力远远超出成绩单上的数字。</p>
+<br>
+<b>6. 相信努力的积累，今天的每一步都在为未来打下基础。</b>
+<p>- 无论是小技能还是兴趣爱好，点滴的努力都会成为你的资本。</p>
+<br>
+<b>7. 不要害怕失败，失败只是通往成功的路标。</b>
+<p>- 每一次跌倒都是一次学习的机会，你会比别人更有韧性和智慧。</p>
+<br>
+<b>8. 每个伟大的人都从一个不起眼的开始走来。</b>
+<p>- 你现在的状态不代表永远，关键是不要放弃前进的动力。</p>
+<br>
+<b>9. 人生的高度由你的梦想决定，而不是你的学历。</b>
+<p>- 想要飞得更高，需要的是信心、耐心和行动，而不是外界的标签。</p>
+<br>
+<b>10. 不要急着证明自己，慢慢努力，总有一天你会比自己想象得更强大。</b>
+<p>- 最重要的是超越自己，而不是迎合别人。</p>
+            </div>
+            <div class="page-content" id="page-4-right"><center><b>第八页</b></center>
+            <hr><br>
+            <b>追求内心的平静比取悦他人更加值得。</b>
+            <br><br>
+            <b>6. 外界的声音永远无法定义你，你的行动和坚持才是答案。</b>
+<p>- 坚持走自己的路，时间会证明一切。</p>
+<br>
+<b>11. 听取意见，但不被左右；吸收建议，但不失自我。</b>
+<p>- 保持开放的心态，同时也要守住自己的原则和底线。</p>
+<br>
+<b>12. 有些朋友注定无法理解你，</b>
+<p>- 不需要每个人都支持你，重要的是你对自己有信心。</p>
+<br>
+<b>13. 不要因为怕被评价而停止前进，勇敢迈步是对质疑最好的回答。</b>
+<p>- 成长的过程总会伴随一些声音，但你终将超越那些质疑。</p>
+<br>
+<b>14. 朋友或别人如何看待你是他们的事，如何生活是你的事。</b>
+<p>- 别为别人的意见而活，你有权决定自己的生活方式。</p>
+<br><br>
+<p>内容就到这里啦，下次会更新的，做好自己，也要尊重别人哦。</p>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="arrow prev hidden" id="prev-arrow">&lt;</div>
+        <div class="arrow next" id="next-arrow">&gt;</div>
+    </div>
+
+    <script>
+        const leftPages = document.querySelectorAll('.left-page .page-content');
+        const rightPages = document.querySelectorAll('.right-page .page-content');
+        const prevArrow = document.getElementById('prev-arrow');
+        const nextArrow = document.getElementById('next-arrow');
+        const openButton = document.getElementById('open-button');
+        const bookContainer = document.getElementById('book-container');
+        const cover = document.querySelector('.cover');
+
+        let currentPage = 0;
+
+        openButton.addEventListener('click', () => {
+            cover.style.display = 'none';
+            bookContainer.style.display = 'flex';
+        });
+
+        function updateArrows() {
+            prevArrow.classList.toggle('hidden', currentPage === 0);
+            nextArrow.classList.toggle('hidden', currentPage === leftPages.length - 1);
+        }
+
+        function showPage(index) {
+            leftPages[currentPage].classList.remove('active');
+            rightPages[currentPage].classList.remove('active');
+            currentPage = index;
+            leftPages[currentPage].classList.add('active');
+            rightPages[currentPage].classList.add('active');
+            updateArrows();
+        }
+
+        prevArrow.addEventListener('click', () => {
+            if (currentPage > 0) {
+                showPage(currentPage - 1);
+            } else {
+                bookContainer.style.display = 'none';
+                cover.style.display = 'flex';
+            }
+        });
+
+        nextArrow.addEventListener('click', () => {
+            if (currentPage < leftPages.length - 1) {
+                showPage(currentPage + 1);
+            }
+        });
+
+        updateArrows();
+    </script>
+</body>
+</html>
